@@ -1,0 +1,5 @@
+.openai/
+.sites-runtime/
+*.zip
+*.tar.gz
+update-*.cjs

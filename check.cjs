@@ -1,0 +1,1 @@
+const fs=require('fs'),vm=require('vm');const html=fs.readFileSync('dist/index.html','utf8');const js=html.match(/<script>([\s\S]*?)<\/script>/)[1];new vm.Script(js);console.log('JavaScript syntax OK');

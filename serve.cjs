@@ -1,0 +1,1 @@
+const http=require('http'),fs=require('fs');http.createServer((req,res)=>{res.setHeader('Content-Type','text/html;charset=utf-8');res.end(fs.readFileSync(__dirname+'/dist/index.html'))}).listen(8769,'127.0.0.1',()=>console.log('Local URL: http://127.0.0.1:8769'));
